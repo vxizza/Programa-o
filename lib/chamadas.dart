@@ -8,7 +8,6 @@ class Chamadas extends StatelessWidget{
     @override
     Widget build (BuildContext context){
         return Container (
-            alignment: alignment.center,
             child: Text("Página de chamadas"),
         );
     }

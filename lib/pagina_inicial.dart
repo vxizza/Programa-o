@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:meuapp_a/conversas.dart';
 
-import 'conversas.dart';
+import 'Conversas.dart';
 import 'chamadas.dart';
 import 'status.dart';
 
@@ -17,13 +17,13 @@ class PaginaInicial extends StatelessWidget {
             backgroundColor: Color.fromARGB(255, 78, 167, 84),
             title: Text("Whatsapp"),
             bottom: TabBar(
-              tabs: [
-                tab(text: "Conversas"),
-                tab(text: "Status"),
-                tab(text: "Chamadas"),
-              ],
+             tabs: [
+      
+             ],
+           
             )
-            actions: [
+       
+             actions: [
               IconButton(
                 onPressed: () {},
                 icon: Icon(Icons.camera_alt_outlined),
@@ -36,11 +36,11 @@ class PaginaInicial extends StatelessWidget {
                 onPressed: () {},
                 icon: Icon(Icons.more_vert),
               ),
-            ],
+             ],
           ),
           body: TabBarView(
-            children: [
-              Conversas (),
+             children: [
+             Conversas (),
               Chamadas (),
               Status (),
             ],
