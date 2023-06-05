@@ -1,14 +1,15 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
- 
- import 'package:flutter/material.dart';
 
-class Chamadas extends StatelessWidget{
-    const Chamadas ({super.key});
+class Chamadas extends StatelessWidget {
+  const Chamadas({super.key});
 
-    @override
-    Widget build (BuildContext context){
-        return Container (
-            child: Text("Página de chamadas"),
-        );
-    }
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      alignment: Alignment.center,
+      child: Icon(Icons.call_made),
+    );
+  }
 }
