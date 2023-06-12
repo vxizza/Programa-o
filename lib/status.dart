@@ -25,8 +25,7 @@ class Status extends StatelessWidget {
         ListTile(
           title: Row(
             children: [
-              Text(
-                "Instagram",
+              Text('Instagram',
                 style: TextStyle(
                   color: Color.fromARGB(255, 255, 255, 255),
                   
@@ -74,6 +73,7 @@ class Status extends StatelessWidget {
             ),
           ),
         ),
+
       ],
     );
   }
