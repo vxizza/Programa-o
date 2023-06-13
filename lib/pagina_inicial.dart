@@ -3,8 +3,8 @@
 import 'package:flutter/material.dart';
 
 import 'conversas.dart';
-import 'chamadas.dart';
-import 'status.dart';
+import 'notificacao.dart';
+import 'direct.dart';
 
 class PaginaInicial extends StatelessWidget {
   const PaginaInicial({super.key});
@@ -16,32 +16,29 @@ class PaginaInicial extends StatelessWidget {
       child: Scaffold(
         appBar: AppBar(
           backgroundColor: Color.fromARGB(255, 255, 255, 255),
-          foregroundColor:Colors.black,
-                  elevation: 0,
+          foregroundColor: Colors.black,
+          elevation: 0,
           title: Text("Instagram"),
-          
           actions: [
             IconButton(
               onPressed: () {},
               icon: Icon(Icons.add_box_outlined),
             ),
             IconButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.pushNamed(context, '/notificacao');
+              },
               icon: Icon(Icons.favorite_border_outlined),
             ),
             IconButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.pushNamed(context, '/direct');
+              },
               icon: Icon(Icons.send),
             ),
           ],
         ),
-        body: TabBarView(
-          children: [
-            Conversas(),
-            Status(),
-            Chamadas(),
-          ],
-        ),
+        body: Conversas(),
       ),
     );
   }
